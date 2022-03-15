@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+tools:context=".HomeFragment">
+
+<RelativeLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:id="@+id/textdashboard"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super Sales"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:src="@drawable/ic_icon_user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:elevation="10dp"/>
+
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super Sales"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:background="#F9CE41"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/deals_img"
+        android:src="@drawable/ic_icon_deal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:elevation="10dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp">
+
+
+
+        <TextView
+            android:id="@+id/text_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Monthly Target"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_target"
+            android:gravity="center"
+            android:text="Deals"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/text_deal_count"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+
+        <ProgressBar
+            android:id="@+id/taskProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="365dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="100dp"
+            android:progress="2"
+            android:progressBackgroundTint="@color/colorPrimaryDark" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/task_img"
+        android:src="@drawable/ic_icon_task_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="240dp"
+        android:elevation="10dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="240dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp">
+
+
+
+        <TextView
+            android:id="@+id/text_target2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Today's task"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_target2"
+            android:gravity="center"
+            android:text="Tasks"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/text_task_count"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+
+        <ProgressBar
+            android:id="@+id/taskProgress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="365dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="100dp"
+            android:progress="2"
+            android:progressBackgroundTint="@color/colorPrimaryDark" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/meetings_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="330dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_icon_calendar_22" />
+
+    <RelativeLayout
+        android:layout_marginTop="330dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp">
+
+
+
+        <TextView
+            android:id="@+id/text_next_meetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Monthly Target"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_next_meetings"
+            android:gravity="center"
+            android:text="RSD"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_meeting_time"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="10.30 AM"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+
+
+        <TextView
+            android:id="@+id/text_meet_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_meeting_time"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Next meeting will be at 12 o clock"
+            android:textColor="#808080"
+            android:textSize="18sp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/earnings_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="480dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_icon_rupee" />
+
+    <RelativeLayout
+        android:layout_marginTop="480dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp">
+
+
+
+        <TextView
+            android:id="@+id/text_weeks_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This weeks"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_earnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_weeks_earning"
+            android:gravity="center"
+            android:text="Earnings"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/text_earn_count"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_allservices"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="415dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_icon_allservices_1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/text_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Access"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_allservices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_services"
+            android:gravity="center"
+            android:text="Services"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="300dp"
+    android:layout_marginTop="550dp"
+    android:layout_marginBottom="50dp"
+    android:clickable="true"
+    android:background="#F9CE41"
+    android:src="@drawable/ic_icon_plus"/>
+
+
+
+
+
+
+</FrameLayout>

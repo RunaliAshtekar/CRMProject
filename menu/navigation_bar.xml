@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_icon_home"
+            />
+
+        <item
+            android:id="@+id/meetings"
+            android:title="Meetings"
+            android:icon="@drawable/ic_icon_calendar_22"
+
+            />
+
+
+        <item
+            android:id="@+id/deals"
+            android:title="Deals"
+            android:icon="@drawable/ic_icon_deal"
+            />
+
+        <item
+            android:id="@+id/task"
+            android:title="Tasks"
+            android:icon="@drawable/ic_icon_task"
+            />
+
+        <item
+            android:id="@+id/contacts"
+            android:title="Contacts"
+            android:icon="@drawable/ic_icon_user"
+            />
+    </menu>
+

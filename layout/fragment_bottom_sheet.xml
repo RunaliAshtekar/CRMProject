@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheetFragment"
+    android:orientation="vertical"
+    android:id="@+id/bottom_sheet"
+    android:padding="10dp"
+    android:background="@drawable/bottom_sheet_background">
+
+
+        <LinearLayout
+            android:id="@+id/layout_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/add_deal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_deal"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/add_deal"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Add Deal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_deal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/create_task_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_icon_task"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/create_task"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Create Tasks"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_meeting"
+            android:layout_below="@+id/layout_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/new_meeting_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_icon_calendar_22"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/new_meeting"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="New Meetings"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contact"
+            android:layout_below="@+id/layout_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/add_contacts_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_icon_call"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/add_contacts"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Add Contacts"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
